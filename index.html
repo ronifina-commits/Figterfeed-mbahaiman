@@ -1,15 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fighter Feed</title>
-</head>
-<body style="background:black;color:white;text-align:center;font-family:Arial;padding:50px;">
-  <h1>Fighter Feed</h1>
-  <p>Supplier Pakan & Suplemen Ayam</p>
 
-  <a href="https://wa.me/6282139007696"
-     style="background:gold;color:black;padding:15px 25px;text-decoration:none;border-radius:10px;font-weight:bold;">
-     Order WhatsApp
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:#0f0f0f;
+      color:white;
+    }
+
+    header{
+      background:linear-gradient(to right,#000,#5c0000);
+      padding:60px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:55px;
+      margin-bottom:10px;
+      color:gold;
+    }
+
+    header p{
+      font-size:20px;
+      color:#ddd;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      background:gold;
+      color:black;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:12px;
+      font-weight:bold;
+    }
+
+    .section{
+      padding:50px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:40px;
+      color:gold;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1a1a1a;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 0 15px rgba(0,0,0,0.5);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card h3{
+      margin-top:0;
+      color:gold;
+    }
+
+    footer{
+      background:black;
+      text-align:center;
+      padding:30px;
+      color:#aaa;
+      margin-top:50px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Fighter Feed</h1>
+  <p>Pakan & Suplemen Ayam Berkualitas</p>
+
+  <a class="btn" href="https://wa.me/6282139007696">
+    Order WhatsApp
   </a>
+</header>
+
+<section class="section">
+  <h2 class="title">Produk Unggulan</h2>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h3>Extra Fooding Pemulihan</h3>
+        <p>Membantu pemulihan dan menjaga stamina ayam.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h3>Extra Fooding Super</h3>
+        <p>Formula premium untuk tenaga dan nafsu makan.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop">
+      <div class="card-content">
+        <h3>Jagung Mix Fighter</h3>
+        <p>Pakan harian berkualitas untuk performa maksimal.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Fighter Feed — Supplier Pakan & Suplemen Ayam
+</footer>
+
 </body>
 </html>
